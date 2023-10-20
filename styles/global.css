@@ -15,7 +15,7 @@ body {
     /* O restante do seu código para o body */
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -33,12 +33,13 @@ header {
 
 main {
     width: 100%;
-    height: auto; 
+    min-width: 120vh; 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    
+    gap:150px
 }
 
 .mainCard {
@@ -47,13 +48,47 @@ main {
     height: 350px;
     box-shadow: 10px 10px  #f6b60d;
     transition: transform 0.2s, box-shadow 0.8s;
+    display: flex;
+    flex-direction: column;    
+    padding-top: -20px;
+    padding: 50px
 }
 
 .cardContainer{
     text-align: center;
 }
+
+.mainCard p {
+    margin:10px 0;
+    padding:10px;
+}
+
+
 .mainCard:hover {
     transform: scale(1.05); 
     box-shadow: 15px 15px  #f6b60d;
 }
 
+p{
+    color:#000;
+    font-family: 'Noto Serif JP', serif; ;
+    font-size: 1.8rem;
+}
+
+#bushidoAnswer{
+    color:#000;
+    font-size: 0.8rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.secondCard{
+    background-color: #ffff;
+    width: 1550px;
+    height: 350px;
+    box-shadow: 10px 10px  #f6b60d;
+    transition: transform 0.2s, box-shadow 0.8s;
+    display: flex;
+    flex-direction: column;    
+    padding-top: -20px;
+    padding: 50px
+}
